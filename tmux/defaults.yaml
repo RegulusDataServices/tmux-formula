@@ -5,4 +5,4 @@ tmux:
   group: root
   manage_config: True
   config_file: /usr/share/tmux/.tmux.conf
-  config_src: salt://{{ slspath }}/files/.tmux.conf
+  config_src: salt://base/files/.tmux.conf

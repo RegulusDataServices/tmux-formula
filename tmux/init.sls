@@ -9,7 +9,7 @@ tmux_conf:
   file.managed:
     - name: {{ salt['pillar.get']('tmux.config_file', tmux.config_file) }}
     - name: {{ tmux.config_file }}
-    - source: salt://tmux/files/.tmux.conf
+    - source: salt://base/files/.tmux.conf
     - user: root
     - group: {{ tmux.group }}
     - mode: 644
